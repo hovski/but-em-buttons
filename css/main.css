@@ -1,15 +1,19 @@
 html {
-  font-family: 'Ubuntu Condensed', sans-serif;
+  font-family: "Ubuntu Condensed", sans-serif;
   color: #fff;
 }
 
-.btn {
+.btn-ghost {
   border-color: #90ccc3;
+  border-bottom: 0;
   color: #b4fff4;
   border-radius: 8px;
+  transition: all 200ms linear;
 }
 
-.btn:hover {
+.btn-ghost:hover,
+.btn-ghost:focus,
+.btn-ghost:active {
   background-color: rgba(180, 255, 244, .2);
   border-color: #b4fff4;
   color: #b4fff4;
@@ -17,12 +21,15 @@ html {
 
 .move {
   width: 100%;
-  height: 5em;
-  padding: 1em;
+  padding: .4em;
+  left: 0;
+  top: 44px;
+  border-radius: 0 0 8px 8px;
+  border: 3px solid #b4fff4;
 }
 
 a:hover .move {
-
+  padding: .2em;
 }
 
 .image-container {
@@ -31,5 +38,5 @@ a:hover .move {
 
 h2,
 p {
-  text-shadow: 0px 0px 30px rgba(255, 255, 255, .7);
+  text-shadow: 0 0 30px rgba(255, 255, 255, .7);
 }

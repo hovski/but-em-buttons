@@ -23,13 +23,17 @@ html {
   width: 100%;
   padding: .4em;
   left: 0;
-  top: 44px;
+  bottom: -44px;
   border-radius: 0 0 8px 8px;
   border: 3px solid #b4fff4;
 }
 
 a:hover .move {
   padding: .2em;
+}
+
+.btn-ghost:active {
+  top: -2px;
 }
 
 .image-container {
